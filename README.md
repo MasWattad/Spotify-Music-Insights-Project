@@ -6,19 +6,19 @@ This project presents an end-to-end analysis of Spotify's most streamed music us
 
 ## 📌 Project Objectives
 
-- 🔍 Analyze track metadata like danceability, energy, and tempo  
-- 📈 Explore trends in engagement: views, likes, comments  
-- ⚙️ Compare streaming performance across platforms (Spotify vs YouTube)  
-- 🧠 Identify high-performing artists and tracks  
-- 📊 Visualize all findings in a professional Power BI dashboard  
+-  Analyze track metadata like danceability, energy, and tempo  
+-  Explore trends in engagement: views, likes, comments  
+-  Compare streaming performance across platforms (Spotify vs YouTube)  
+-  Identify high-performing artists and tracks  
+-  Visualize all findings in a professional Power BI dashboard  
 
 ---
 
 ## 🛠 Tools & Technologies
 
-- 🐘 **PostgreSQL** (via **pgAdmin 4**) – for SQL querying and analysis  
-- 📊 **Power BI** – for interactive visualizations  
-- 💻 **GitHub** – for version control and project sharing  
+-  **PostgreSQL** (via **pgAdmin 4**) – for SQL querying and analysis  
+-  **Power BI** – for interactive visualizations  
+-  **GitHub** – for version control and project sharing  
 
 ---
 
@@ -47,20 +47,20 @@ The dataset contains detailed metadata, audio features, and engagement stats for
 
 Using SQL views, the following questions were explored:
 
-1. 🧮 How many tracks and unique artists are in the dataset?  
-2. 🔥 Which songs have over 1 billion streams?  
-3. 📊 What are the min, max, and average for views, likes, and comments?  
-4. 💽 How are streams distributed by album type?  
-5. 🏆 Who are the top 5 most streamed artists and tracks?  
-6. 🟢 How do Spotify and YouTube compare in terms of streams?  
-7. 🎧 What are the average audio features across all tracks?  
-8. 🚀 How do the top 10% streamed tracks compare in features?  
-9. ❤️ What’s the engagement ratio (likes/views, comments/views) per track?  
-10. 🎚 Are there patterns between streams and features like energy, tempo, or danceability?
+1.  How many tracks and unique artists are in the dataset?  
+2.  Which songs have over 1 billion streams?  
+3.  What are the min, max, and average for views, likes, and comments?  
+4.  How are streams distributed by album type?  
+5.  Who are the top 5 most streamed artists and tracks?  
+6.  How do Spotify and YouTube compare in terms of streams?  
+7.  What are the average audio features across all tracks?  
+8.  How do the top 10% streamed tracks compare in features?  
+9.  What’s the engagement ratio (likes/views, comments/views) per track?  
+10.  Are there patterns between streams and features like energy, tempo, or danceability?
 
 ---
 
-## 🧼 Data Cleaning
+##  Data Cleaning
 
 Basic cleaning was performed in SQL:
 
@@ -91,7 +91,7 @@ Basic cleaning was performed in SQL:
 
 Insights were visualized in Power BI using the cleaned and analyzed data. The dashboard contains filters, KPIs, charts, and scatter plots.
 
-> 📷 **Dashboard Preview**  
+>  **Dashboard Preview**  
 > Replace the image path below with your actual file name.
 
 ![Power BI Dashboard](spotify_pic.png)
