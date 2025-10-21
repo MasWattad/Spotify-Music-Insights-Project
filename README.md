@@ -6,11 +6,11 @@ This project presents an end-to-end analysis of Spotify's most streamed music us
 
 ## 📌 Project Objectives
 
-- 🔍 Analyze track metadata like danceability, energy, and tempo
-- 📈 Explore trends in engagement: views, likes, comments
-- ⚙️ Compare streaming performance across platforms (Spotify vs YouTube)
-- 🧠 Identify high-performing artists and tracks
-- 📊 Visualize all findings in a professional Power BI dashboard
+- 🔍 Analyze track metadata like danceability, energy, and tempo  
+- 📈 Explore trends in engagement: views, likes, comments  
+- ⚙️ Compare streaming performance across platforms (Spotify vs YouTube)  
+- 🧠 Identify high-performing artists and tracks  
+- 📊 Visualize all findings in a professional Power BI dashboard  
 
 ---
 
@@ -18,7 +18,7 @@ This project presents an end-to-end analysis of Spotify's most streamed music us
 
 - 🐘 **PostgreSQL** (via **pgAdmin 4**) – for SQL querying and analysis  
 - 📊 **Power BI** – for interactive visualizations  
-- 💻 **GitHub** – for version control and project sharing
+- 💻 **GitHub** – for version control and project sharing  
 
 ---
 
@@ -26,18 +26,18 @@ This project presents an end-to-end analysis of Spotify's most streamed music us
 
 The dataset contains detailed metadata, audio features, and engagement stats for popular music tracks. Key fields include:
 
-| Column              | Description |
-|---------------------|-------------|
-| `artist`            | Artist name |
-| `track`             | Track title |
-| `album`             | Album name |
-| `album_type`        | Album, single, compilation |
-| `danceability`      | How danceable a track is |
-| `energy`            | Energy intensity of the track |
-| `valence`           | Positiveness of the track |
-| `tempo`             | Beats per minute |
-| `views`, `likes`, `comments` | YouTube engagement stats |
-| `stream`            | Spotify stream count |
+| Column              | Description                          |
+|---------------------|------------------------------------|
+| `artist`            | Artist name                        |
+| `track`             | Track title                       |
+| `album`             | Album name                        |
+| `album_type`        | Album, single, compilation        |
+| `danceability`      | How danceable a track is          |
+| `energy`            | Energy intensity of the track     |
+| `valence`           | Positiveness of the track         |
+| `tempo`             | Beats per minute                  |
+| `views`, `likes`, `comments` | YouTube engagement stats   |
+| `stream`            | Spotify stream count              |
 | `official_video`    | Whether it's an official music video |
 | `most_played_on`    | Most streamed platform (Spotify or YouTube) |
 
@@ -64,11 +64,26 @@ Using SQL views, the following questions were explored:
 
 Basic cleaning was performed in SQL:
 
-- Removed tracks with `duration_min = 0`
-- Explored and standardized values in:
-  - `album_type`
-  - `most_played_on`
+- Removed tracks with `duration_min = 0`  
+- Explored and standardized values in:  
+  - `album_type`  
+  - `most_played_on`  
   - `channel`
+
+---
+
+## How the Project Was Done
+
+### Data Import & SQL Analysis in pgAdmin 4
+
+- Imported the Spotify dataset into a PostgreSQL database using pgAdmin 4.  
+- Created the `spotify` table and performed data cleaning (e.g., removed tracks with zero duration).  
+- Developed SQL views and queries to analyze streams, engagement, audio features, and platform data.
+
+### Power BI Dashboard Development
+
+- Connected Power BI Desktop directly to the PostgreSQL database.  
+- Designed and implemented comprehensive dashboards to visualize key metrics such as artist performance, streaming trends, user engagement, and audio feature correlations.
 
 ---
 
@@ -98,4 +113,7 @@ Insights were visualized in Power BI using the cleaned and analyzed data. The da
 - **Most Streamed Track**: *Blinding Lights*  
 - **Platform Dominance**: Spotify had ~56% of total streams  
 - **Track Traits That Perform Well**: High energy, high danceability, and positive valence  
-- **Engagement**: Some tracks have strong like-to-view and comment-to-view ratios
+- **Engagement**: Some tracks have strong like-to-view and comment-to-view ratios  
+
+---
+
